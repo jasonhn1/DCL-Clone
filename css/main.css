@@ -62,7 +62,7 @@ header .intro-text .skills {
 		padding-bottom: 20px;
 	}
 	header .intro-text .name {
-		font-size: 2.2em;
+		font-size: 2.0em;
 	}
 	header .intro-text .skills {
 		font-size: 1.3em;
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
-hr.star-light, hr.star-primary {
+hr.star-primary {
 	margin: 0px auto 0px;
 	padding: 0;
 	max-width: 250px;
@@ -82,7 +82,16 @@ hr.star-light, hr.star-primary {
 	border-top: solid 5px;
 	text-align: center;
 	border-color: #2c3e50;
-    border-color: #2c3e50;
+    opacity: 100%;
+}
+hr.star-light {
+	margin: 15px auto 15px;
+	padding: 0;
+	max-width: 250px;
+	border: 0;
+	border-top: solid 5px;
+	text-align: center;
+	border-color: #fff;
     opacity: 100%;
 }
 
@@ -97,9 +106,8 @@ hr.star-light, hr.star-primary {
 	max-width: 350px;
 	text-align: center;
 }
-.service-item-lg {
-	margin-top: 15px;
-	margin-bottom: 15px;
+.service-item-lg {	
+	margin: 15px 10px;
 }
 .service-item .service-link {
 	display: block;
