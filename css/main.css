@@ -1,3 +1,48 @@
+.home-image {
+	width: 100%;
+	height: auto; 
+}
+
+.home-text {
+	position: absolute; /* make the text element position absolute */
+	top: 200px; /* adjust the top and right values to position the text element */
+	left: 40px;
+	color: #ffffff; /* set the text color */
+	z-index: 1; /* make the text element on top of the image */
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+  .about-container {
+	display: flex; /* use flexbox to create a container */
+	flex-direction: row; /* make the container horizontal */
+	background-color: #444f5a;
+  }
+  
+  .about-text {
+	color: white;
+	flex-basis: 55%; /* make the text element occupy 50% of the container width */
+	margin-top: 20px;
+	margin-left: 20px;
+	padding-right: 60px; /* add some padding to the right side of the text element */
+  }
+  
+  .about-image {
+	flex-basis: 45%; /* make the image element occupy 50% of the container width */
+  }
+  
+  .about-image img {
+	width: 100%; /* make the image element fill its container */
+	height: auto; /* maintain the aspect ratio of the image */
+  }
+
+
+
+#concrete{
+	margin-top: 100px;
+}
+
+
 .body-style {
     padding-top: 50px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
