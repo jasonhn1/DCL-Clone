@@ -1,6 +1,21 @@
 .home-image {
 	width: 100%;
 	height: auto; 
+	margin-top: -50px;
+}
+
+
+.color{
+	background-color: #fff0e5;
+}
+.background{
+	width: 500px;
+	height: 150px;
+	z-index: 2;
+	background-color: #fff0e5;
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-bottom: -20px;
 }
 
 .home-text {
@@ -9,8 +24,9 @@
 	left: 40px;
 	color: #ffffff; /* set the text color */
 	z-index: 1; /* make the text element on top of the image */
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+	font-family: 'Gloock', serif;  
+	letter-spacing: 3px;
+}
 
 
   .about-container {
@@ -114,10 +130,10 @@ header .intro-text .skills {
 	}
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;	
 	font-weight: 700;
-}
+} */
 
 hr.star-primary {
 	margin: 0px auto 0px;
