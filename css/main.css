@@ -1,3 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+/* Border under nav bar */
+nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
+	border-bottom: 4mm groove rgba(122, 73, 0, 0.6);
+}
+
+/* Pages */
+.nav-item{
+	padding-right: 30px;
+	font-family:'Titillium Web';
+	font-size: 23px;
+}
+
+
+
+.nav-item a {
+	padding: .5em .8em;
+	color: rgba(255,255,255,.5);
+	position: relative;
+	text-decoration: none;
+	font-size: 20px;
+	
+  }
+  
+  .nav-item a::before,
+  .nav-item a::after {
+	content: '';
+	height: 14px;
+	width: 14px;
+	position: absolute;
+	transition: all .35s ease;
+	opacity: 0;
+	
+  }
+  
+  .nav-item a::before {
+	content: '';
+	right: 0;
+	top: 0;
+	border-top: 3px solid #3E8914;
+	border-right: 3px solid #2E640F;
+	transform: translate(-100%, 50%);
+	
+  }
+  
+  .nav-item a:after {
+	content: '';
+	left: 0;
+	bottom: 0;
+	border-bottom: 3px solid #2E640F;
+	border-left: 3px solid #3E8914;
+	transform: translate(100%, -50%);
+	
+  }
+  
+  .nav-item a:hover:before,
+  .nav-item a:hover:after{
+	transform: translate(0,0);
+	opacity: 1;
+	
+  }
+  
+
+
+  .nav-spacing{
+	margin-top: 150px;
+}
+
+/* Home page */
 .home-image {
 	width: 100%;
 	height: auto; 
@@ -5,18 +75,7 @@
 }
 
 
-.color{
-	background-color: #fff0e5;
-}
-.background{
-	width: 500px;
-	height: 150px;
-	z-index: 2;
-	background-color: #fff0e5;
-	margin-top: 40px;
-	margin-left: 40px;
-	margin-bottom: -20px;
-}
+
 
 .home-text {
 	position: absolute; /* make the text element position absolute */
@@ -69,7 +128,7 @@
 .navbar-default {
     padding: 0;
 	border: 0;
-	background: #2c3e50;
+	background: #263a29;
     text-transform: uppercase;
     font-weight: 700;
 }
