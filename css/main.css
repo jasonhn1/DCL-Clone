@@ -77,6 +77,19 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
     padding-bottom: 58.25%; /* 16:9 aspect ratio */
   }
   
+  /* #slideshow::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(87, 72, 83, 0.73));
+	opacity: 0.6; 
+	z-index: 3;
+  }
+   */
+
   #slideshow img {
 	position: absolute;
 	top: 0;
@@ -85,24 +98,98 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 	height: 100%;
 	opacity: 0;
 	transition: opacity 1s ease-in-out;
+	z-index: 2;
+
   }
   
   #slideshow img:first-child {
 	opacity: 1;
   }
 
+
+ 
+  .diagonal-image {
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%, 0 100%);
+}
+
+
+
+
+  
 .home-text {
 	position: absolute; /* make the text element position absolute */
 	top: 260px; /* adjust the top and right values to position the text element */
 	left: 40px;
 	color: #ffffff; /* set the text color */
 	z-index: 1; /* make the text element on top of the image */
+	font-size: 50px;
+	font-family:'Roboto';
+	letter-spacing: 3px;
+	z-index: 3;
+
+	text-shadow: 3px 15px 15px #000000;
+
+	opacity: 0;
+	transform: translateY(50%);
+	animation: fade-up 1s ease-in-out forwards;
+	animation-delay: .5s; /* delay the animation by 1 second */
+}
+
+@keyframes fade-up {
+	from {
+	  opacity: 0;
+	  transform: translateY(50%);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+
+.estimates {
+	position: absolute; /* make the text element position absolute */
+	margin-top: -200px;
+	left: 100px;
+	color: #000000; /* set the text color */
+	z-index: 1; /* make the text element on top of the image */
 	font-family: 'Playfair Display', serif;
 	font-size: 50px;
 	font-weight: 100000000px;
 	letter-spacing: 3px;
+    display: inline-block;
+	z-index: 4;
+	white-space:nowrap;
+
 }
 
+
+.highlight {
+	display: inline-block;
+	position: absolute;
+	z-index: -1;
+	background-color: #F2BB05;
+	height: 40px;
+	width: 0px; /* set initial width here */
+	transition: width 0.5s;
+	transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  }
+  
+  .item.highlight-active .highlight {
+	width: 400px;
+	transition: all 500ms ease; 
+
+  }
+
+  .item {
+	transition: all 500ms ease; 
+  }
+  
+  .item:hover .highlight {
+	/* hardcoded */
+	transform: skew(-9deg) scale(1.2);
+
+  }
 
   .about-container {
 	display: flex; /* use flexbox to create a container */

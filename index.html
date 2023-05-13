@@ -13,7 +13,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/lazyload.min.js"></script>
 </head>
 
@@ -54,7 +54,9 @@
 
         <div class = "nav-spacing">
                 <div id="slideshow">
-                    <img src="./images/home/home_1.jpg" />
+                
+                    <img class="diagonal-image" src="./images/home/home_1.jpg" />
+                    
                     <img src="./images/home/home_2.jpg" />
                     <img src="./images/home/home_3.jpg" />
                     <img src="./images/home/home_4.jpg" />
@@ -64,10 +66,15 @@
                 <div class="home-text">
                     <p>Top-Rated </p>
                     <p>Landscaping Services </p>
-                    <p>Free estimates </p>
+                </div>
+                <div class ="estimates">
+                    <div class="item">
+                        <div class="highlight">Free estimates</div> 
+                    </div>
+                </div>
                     <br/><br/><br/>
-                    <div>Contact Us</div>
-              </div>
+                    <!-- <div>Contact Us</div> -->
+
           
 
             
@@ -372,6 +379,18 @@
     
 </body>
 <script type="text/javascript">
+        window.addEventListener('load', function() {
+        var homeText = document.querySelector('.home-text');
+        homeText.classList.add('show');
+        });
+
+        
+        window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.querySelector('.item').classList.add('highlight-active');
+        }, 1000); // adjust delay time in milliseconds as needed
+        });
+
     var currentSlide = 0;
     var slides = document.querySelectorAll('#slideshow img');
   
@@ -381,7 +400,7 @@
       slides[currentSlide].style.opacity = 1;
     }
   
-    setInterval(nextSlide, 3000);
+    //setInterval(nextSlide, 3000);
     window.onload = function () { 
         lazyload();
     }
