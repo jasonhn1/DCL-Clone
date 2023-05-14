@@ -65,6 +65,7 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 
   .nav-spacing{
 	margin-top: 110px;
+	margin-bottom: -72px;
 }
 
 
@@ -75,6 +76,8 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 	max-width: 100%;
 	height: 0;
     padding-bottom: 58.25%; /* 16:9 aspect ratio */
+	border-bottom: 10px solid rgba(122, 73, 0, 0.6);
+
   }
   
   /* #slideshow::before {
@@ -109,8 +112,9 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 
  
   .diagonal-image {
-	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%, 0 100%);
+	clip-path: polygon(100% 0, 0 0, 0 60%, 0 100%, 40% 100%, 100% 70%);
 }
+  
 
 
 
@@ -120,20 +124,20 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 	position: absolute; /* make the text element position absolute */
 	top: 260px; /* adjust the top and right values to position the text element */
 	left: 40px;
-	color: #ffffff; /* set the text color */
+	color: 	#ffee8d	; /* set the text color */
 	z-index: 1; /* make the text element on top of the image */
-	font-size: 50px;
+	font-size: 60px;
 	font-family:'Roboto';
 	letter-spacing: 3px;
 	z-index: 3;
-
-	text-shadow: 3px 15px 15px #000000;
-
 	opacity: 0;
 	transform: translateY(50%);
 	animation: fade-up 1s ease-in-out forwards;
 	animation-delay: .5s; /* delay the animation by 1 second */
+	text-shadow: 4px 4px 0 #000000, 4px 4px 0 #000000;
+	
 }
+
 
 @keyframes fade-up {
 	from {
@@ -146,50 +150,68 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 	}
   }
 
+
 .estimates {
-	position: absolute; /* make the text element position absolute */
-	margin-top: -200px;
-	left: 100px;
-	color: #000000; /* set the text color */
-	z-index: 1; /* make the text element on top of the image */
+	position: absolute;
+	color: #ffffff;
+	margin-top: -400px;
 	font-family: 'Playfair Display', serif;
 	font-size: 50px;
 	font-weight: 100000000px;
 	letter-spacing: 3px;
-    display: inline-block;
+	display: inline-block;
+	font-weight: 1000;
 	z-index: 4;
-	white-space:nowrap;
-
+	white-space: nowrap;
+	left: 100px;
+	opacity: 0;
 }
 
+.fadeIn {
+	opacity: 0;
+	transform: translate3d(-400px, 0, 0);
 
-.highlight {
+	animation: fadeInAnimation 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+	0% {
+	  opacity: 0;
+	  transform: translate3d(-50px, 0, 0);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+
+ .highlight {
 	display: inline-block;
+	top:100;
 	position: absolute;
 	z-index: -1;
-	background-color: #F2BB05;
-	height: 40px;
-	width: 0px; /* set initial width here */
+	background-color: #ffd344;
+	opacity: .9;
+	height: 70px;
+	width: 0px; 
 	transition: width 0.5s;
 	transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-
   }
   
-  .item.highlight-active .highlight {
-	width: 400px;
+.item.highlight-active .highlight {
+	width: 360px;
 	transition: all 500ms ease; 
+}
 
-  }
-
-  .item {
+.item {
 	transition: all 500ms ease; 
-  }
-  
-  .item:hover .highlight {
-	/* hardcoded */
-	transform: skew(-9deg) scale(1.2);
+}
 
-  }
+.item:hover .highlight {
+
+transform: skew(-9deg) scale(1.1);
+
+} 
 
   .about-container {
 	display: flex; /* use flexbox to create a container */
@@ -200,7 +222,6 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
   .about-text {
 	color: white;
 	flex-basis: 55%; /* make the text element occupy 50% of the container width */
-	margin-top: 20px;
 	margin-left: 20px;
 	padding-right: 60px; /* add some padding to the right side of the text element */
   }

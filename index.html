@@ -55,12 +55,10 @@
         <div class = "nav-spacing">
                 <div id="slideshow">
                 
-                    <img class="diagonal-image" src="./images/home/home_1.jpg" />
-                    
-                    <img src="./images/home/home_2.jpg" />
-                    <img src="./images/home/home_3.jpg" />
-                    <img src="./images/home/home_4.jpg" />
-                    <img src="./images/home/home_5.jpg" />
+                    <img class="diagonal-image" src="./images/home/home_1.jpeg" />
+                    <img src="./images/home/home_2.jpeg" />
+                    <img src="./images/home/home_3.jpeg" />
+                    <img src="./images/home/home_4.jpeg" />
                 </div>
 
                 <div class="home-text">
@@ -68,10 +66,13 @@
                     <p>Landscaping Services </p>
                 </div>
                 <div class ="estimates">
+                    
                     <div class="item">
-                        <div class="highlight">Free estimates</div> 
-                    </div>
-                </div>
+                        Free Estimates
+                        <!-- <div class="highlight">Free Estimates</div>  -->
+                   
+                    </div> 
+                </div> 
                     <br/><br/><br/>
                     <!-- <div>Contact Us</div> -->
 
@@ -384,12 +385,19 @@
         homeText.classList.add('show');
         });
 
-        
+        window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.querySelector('.estimates').classList.add('fadeIn');
+        }, 1500); // adjust delay time in milliseconds as needed
+        });
+
         window.addEventListener('load', function() {
         setTimeout(function() {
             document.querySelector('.item').classList.add('highlight-active');
-        }, 1000); // adjust delay time in milliseconds as needed
+        }, 2900); // adjust delay time in milliseconds as needed
         });
+
+
 
     var currentSlide = 0;
     var slides = document.querySelectorAll('#slideshow img');
@@ -400,7 +408,7 @@
       slides[currentSlide].style.opacity = 1;
     }
   
-    //setInterval(nextSlide, 3000);
+  //setInterval(nextSlide, 5000);
     window.onload = function () { 
         lazyload();
     }
