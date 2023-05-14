@@ -13,7 +13,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Roboto:wght@900&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/lazyload.min.js"></script>
 </head>
 
@@ -56,9 +56,9 @@
                 <div id="slideshow">
                 
                     <img class="diagonal-image" src="./images/home/home_1.jpeg" />
-                    <img src="./images/home/home_2.jpeg" />
-                    <img src="./images/home/home_3.jpeg" />
-                    <img src="./images/home/home_4.jpeg" />
+                    <img class="diagonal-image" src="./images/home/home_2.jpeg" />
+                    <img class="diagonal-image" src="./images/home/home_4.jpeg" />
+                    <img class="diagonal-image" src="./images/home/home_3.jpeg" />
                 </div>
 
                 <div class="home-text">
@@ -69,16 +69,19 @@
                     
                     <div class="item">
                         Free Estimates
-                        <!-- <div class="highlight">Free Estimates</div>  -->
-                   
                     </div> 
                 </div> 
-                    <br/><br/><br/>
-                    <!-- <div>Contact Us</div> -->
-
+                
+                <div class="bottom-corner">
+                <button class="button-56">Contact Us</button> 
+                </div>
           
 
             
+
+        </div>
+
+
             <!-- <div class="intro-text">
                 <span class="skills">With our professionalism
                     licensed contractor and over 20 years of experience and dedication to
@@ -86,8 +89,6 @@
                     into a veritable oasis of splendour and delight.<br><br>
                     <i>Contact us for a <b>FREE</b> Consultation &amp; Estimate</i></span>
             </div> -->
-        </div>
-
 
     <!-- end header -->
 
@@ -408,7 +409,7 @@
       slides[currentSlide].style.opacity = 1;
     }
   
-  //setInterval(nextSlide, 5000);
+   setInterval(nextSlide, 5000);
     window.onload = function () { 
         lazyload();
     }
