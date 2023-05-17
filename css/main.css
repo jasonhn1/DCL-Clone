@@ -379,23 +379,28 @@ transform: skew(-9deg) scale(1.1);
 
 /* START OF ABOUT US SECTION */
 
-/* .about-container {
+.about-container {
 	display: flex; 
 	flex-direction: row; 
 	background-color: #2c2b26;
 	margin-top: 72px;
   }
   
-  .about-text {
+  .about-wrapper {
 	color: white;
 	flex-basis: 55%; 
 	margin-left: 20px;
 	padding-right: 60px; 
 	margin-top: 40px;
-	font-family: 'Archivo Black', sans-serif;
   }
-  .about-text h2{
-	font-family: 'Archivo Black', sans-serif;
+
+  .about-top{
+	margin-top: -25px;
+
+  }
+  .about-text{
+	font-family: 'Roboto';
+	font-size: 30px;
   }
 
   .about-text p{
@@ -417,7 +422,7 @@ transform: skew(-9deg) scale(1.1);
 	margin-top: 100px;
 }
 
-*/
+
 .body-style {
     padding-top: 50px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
