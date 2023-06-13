@@ -458,6 +458,8 @@ transform: skew(-9deg) scale(1.1);
 	border: 4px solid rgb(44, 145, 98);
 	transition: transform 0.3s ease-in-out;
 
+	font-weight: 700;
+
 }
 
 .explore:hover{
@@ -717,92 +719,112 @@ transform: skew(-9deg) scale(1.1);
 }
 
 
-.contact-container{
-	/* background-image: url('../images/contact.jpeg'); */
-	background: black;	
-	width: 100%;
-	/* height: 500px; */
 
-    overflow: hidden;
-	/* background-size: cover; 
-	background-position: center;
-	width: 100%;
-	height: 900px; */
-}
-
-
-.left-content{
-	flex-basis: 55%; 
-}
-
-
-.right-content{
-	flex-basis: 45%; 
-}
 
 .background-div {
 	position: relative;
-	width: 100%;
-	height: 650px;
+	display: flex;
+	justify-content: center;
+	height: 85vh; /* Adjust the height as needed */
 	background: url("../images/contact.jpeg") center/cover;
-}
 
-.overlay {
+  }
+  
+  .overlay {
 	position: absolute;
 	top: 0;
-	left: 0;
-	width: 100%;
+	left: 20%;
+	width: 60%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
-
-}
-
-.content {
-	position: relative;
-	display: flex;
-	height: 100%;
-	align-items: center; 
-
-}
-
-.left-content{
-	flex-basis: 55%;
-	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+  }
+  
+  .contact-content {
+	text-align: center;
+	z-index: 1;
 	color: white;
-}
-.right-content {
-	flex-basis: 45%;
-	color: white;
-	padding: 20px;
-}
-
-.left-content h1{
-	font-family: 'Roboto';
-	font-size: 50px;
-}
+  }
 
 #us{
-	margin-left: 200px;
-	margin-top:-150px;
+	margin-top: 30px;
+	font-family: 'Roboto';
+	font-size: 50px;
+	color:#ffffff;
+	border: 4px solid white;
+	padding: 20px;
+	width: 400px;
+	margin-left: 60px;
 }
 
 #schedule{
-	margin-top: 80px;
-	margin-left: 150px;
+	margin-top: 40px;
+	font-family: 'Lato';
+	font-size: 40px;
 	
 }
 
 #consultation{
-	margin-left: 200px;
+	margin-left: 5px;
+	font-family: 'Lato';
+	font-size: 40px;
+	margin-top: -10px;
 } 
 
 #phone{
-	margin-top: 30px;
-	margin-left: 200px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 35px;
+	font-family: 'Roboto';
+
+} 
+
+#phone img{
+	width: 40px;
+	height: 40px;
+	margin-top: -10px;
+	margin-right: 15px;
 } 
 
 
 
+#email{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 30px;
+	font-family: 'Roboto';
+
+} 
+
+#email img{
+	width: 40px;
+	height: 40px;
+	margin-top: -10px;
+	margin-right: 15px;
+} 
+#let{
+	font-family: 'Roboto';
+	font-weight: 300;
+}
+#delta{
+	font-family:"Damion";
+	margin-top: 30px;
+	margin-bottom: 0;
+	font-size: 70px;
+}
+
+#construction{
+	font-family:"Damion";
+	font-size: 40px;
+}
+
+
+#white-logo{
+	margin-top: 0px;
+	margin-left: 50px;
+	width: 60%;
+	height: auto;
+
+}
 .body-style {
     padding-top: 50px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
