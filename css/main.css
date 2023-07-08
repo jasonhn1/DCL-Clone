@@ -1045,7 +1045,7 @@ strong {
 
 
 
-/* explore Section */
+/* About Section */
 
 
 .about-banner{
@@ -1094,4 +1094,86 @@ strong {
 	color: #363b38;
 	font-family: 'Lato';
 	font-size: 20px;
+}
+.profile{
+	margin-top: 70px;
+}
+
+.profile-text{
+	color: #492e2e;
+	font-family: 'Roboto';
+	font-size: 50px;
+}
+
+
+.profile-container {
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+  }
+.profile-desc {
+	flex: 1;
+  }
+.profile-image {
+	flex: 1;
+	text-align: right;
+  }
+
+.profile-sizing{
+	width: 240px;
+}
+
+
+.test{
+	padding-top: 50px;
+	margin: auto;
+	background-image: url("../images/about/leaf.jpg");
+	background-size: cover;
+	margin-top: 80px;
+}
+
+.test-text{
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 50px;
+	color: #fff;
+	margin-bottom: 30px;
+	
+}
+
+.test-container {
+	display: flex;
+	justify-content: space-evenly;
+  }
+  
+ .test-box {
+	width: 250px; /* Adjust the width according to your needs */
+	height: auto; /* Adjust the height according to your needs */
+	background-color: rgba(0, 0, 0, 0.5); 
+	color: white;
+	font-family: 'Lato';
+	padding: 30px;
+  }
+
+  .test-box i{
+	font-size: 17px;
+
+  }
+
+  .test-box span{
+	font-size: 24px;
+  }
+
+.box-1{
+	height: 330px;
+}
+
+  @media (max-width: 768px) {
+	.test-container {
+	  flex-direction: column;
+	}
+  }
+
+.value{
+	background-color: #8bc5b9;
 }
