@@ -20,16 +20,16 @@
 
 <body id="page-top" class="body-style">
     <!-- begin nav -->
-    <nav class="navbar navbar-default navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-default navbar-expand-lg fixed-top bottom-bar">
         <div class="container-fluid">
-            <img class="navbar-brand" src="images/logo.png">
+           <img class="navbar-brand mobile-logo" src="images/bitmap.png">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-font">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                     </li>
@@ -48,17 +48,48 @@
     </nav>
     <!-- end nav -->
 
+
+    <div class="who-banner">Our Services</div>
+    
+    <img src="./images/service/service.jpeg" id = "service" class="about-banner"/>
+
+
+
+    <div class ="services-bg">
     <section id="concrete">
         <div class="container-fluid">
             <div class="flex flex-column mb-3">
                 <div class="p-2 text-center">
-                    <h4>Concrete</h4>
+                    <h4 class="services-header">Concrete</h4>
                     <hr class="star-primary">
                 </div>
             </div>
+
+
+
+
             <div class="d-flex flex-row flex-wrap justify-content-center mb-3">
                 <div class="service-item ">
-                    <a href="category.html?type=Stamped" class="service-link">
+
+                    
+                    <div class="cards">
+                        <div class="card-header">
+                            Stamped
+                        </div>
+                        <a href="category.html?type=Stamped" >
+                        <div class="card-image">
+                            
+                                <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/stamped.jpg" class="lazyload img-fluid" alt="Stamped">
+                            
+                        <div class="over">
+                            <p class="over-text">View More</p>
+                          </div>
+                        </div>
+                    </a>
+                    </div>
+                   
+
+                    <!-- <a href="category.html?type=Stamped" class="service-link">
                         <div class="overlayText-top">Stamped</div>
                         <div class="overlayText-bottom">21 images</div>
                         <div class="caption">
@@ -67,10 +98,30 @@
                             </div>
                         </div>
                         <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/stamped.jpg" class="lazyload img-fluid" alt="Stamped">
-                    </a>
+                    </a> -->
                 </div>
+
                 <div class="service-item ">
-                    <a href="category.html?type=Driveways" class="service-link">
+
+
+                    <div class="cards">
+                        <div class="card-header">
+                            Driveways
+                        </div>
+                        <a href="category.html?type=Driveways" >
+                        <div class="card-image">
+                            
+                                <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/driveway.jpg" class="lazyload img-fluid" alt="Driveways">
+                            
+                        <div class="over">
+                            <p class="over-text">View More</p>
+                          </div>
+                        </div>
+                    </a>
+                    </div>
+
+
+                    <!-- <a href="category.html?type=Driveways" class="service-link">
                         <div class="overlayText-top">Driveways</div>
                         <div class="overlayText-bottom">11 images</div>
                         <div class="caption">
@@ -80,9 +131,36 @@
                         </div>
                         <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/driveway.jpg" class="lazyload img-fluid" alt="Driveways">
                     </a>
+                </div> -->
+
+
+
                 </div>
+
+
+
+
                 <div class="service-item ">
-                    <a href="category?html?type=Patios" class="service-link">
+
+
+                    <div class="cards">
+                        <div class="card-header">
+                            Patios
+                        </div>
+                        <a href="category.html?type=Patios" >
+                        <div class="card-image">
+                            
+                                <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/patio.jpg" class="lazyload img-fluid" alt="Patios">
+                            
+                        <div class="over">
+                            <p class="over-text">View More</p>
+                          </div>
+                        </div>
+                    </a>
+                    </div>
+
+
+                    <!-- <a href="category?html?type=Patios" class="service-link">
                         <div class="overlayText-top">Patios</div>
                         <div class="overlayText-bottom">22 images</div>
                         <div class="caption">
@@ -91,117 +169,198 @@
                             </div>
                         </div>
                         <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/patio.jpg" class="lazyload img-fluid" alt="Patios">
+                    </a> -->
+
+
+
+                </div>
+
+
+                <div class="service-item ">
+
+                    <div class="cards">
+                        <div class="card-header">
+                            Sidewalks
+                        </div>
+                        <a href="category.html?type=Sidewalks" >
+                        <div class="card-image">
+                            
+                                <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/sidewalk.jpg" class="lazyload img-fluid" alt="Sidewalks">
+                            
+                        <div class="over">
+                            <p class="over-text">View More</p>
+                          </div>
+                        </div>
                     </a>
+                    </div>
+
+
+
+
                 </div>
                 <div class="service-item ">
-                    <a href="category.html?type=Sidewalks" class="service-link">
-                        <div class="overlayText-top">Sidewalks</div>
-                        <div class="overlayText-bottom">5 images</div>
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+
+
+                    <div class="cards">
+                        <div class="card-header">
+                            Pool Decks
                         </div>
-                        <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/sidewalk.jpg" class="lazyload img-fluid" alt="Sidewalks">
+                        <a href="category.html?type=Pool Decks" >
+                        <div class="card-image">
+                            
+                                <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/pool_deck.jpg" class="lazyload img-fluid" alt="Pool Decks">
+                            
+                        <div class="over">
+                            <p class="over-text">View More</p>
+                          </div>
+                        </div>
                     </a>
+                    </div>
+
+
                 </div>
                 <div class="service-item ">
-                    <a href="category.html?type=Pool Decks" class="service-link">
-                        <div class="overlayText-top">Pool Decks</div>
-                        <div class="overlayText-bottom">10 images</div>
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+
+                    <div class="cards">
+                        <div class="card-header">
+                            Steps
                         </div>
-                        <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/pool_deck.jpg" class="lazyload img-fluid" alt="Pool Decks">
+                        <a href="category.html?type=Steps" >
+                        <div class="card-image">
+                            
+                                <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/steps.jpg" class="lazyload img-fluid" alt="Steps">
+                            
+                        <div class="over">
+                            <p class="over-text">View More</p>
+                          </div>
+                        </div>
                     </a>
+                    </div>
+                    
                 </div>
                 <div class="service-item ">
-                    <a href="category.html?type=Steps" class="service-link">
-                        <div class="overlayText-top">Steps</div>
-                        <div class="overlayText-bottom">19 images</div>
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+
+                    <div class="cards">
+                        <div class="card-header">
+                            Stained
                         </div>
-                        <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/steps.jpg" class="lazyload img-fluid" alt="Steps">
+                        <a href="category.html?type=Stained" >
+                        <div class="card-image">
+                            
+                                <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/stained.jpg" class="lazyload img-fluid" alt="Stained">
+                            
+                        <div class="over">
+                            <p class="over-text">View More</p>
+                          </div>
+                        </div>
                     </a>
+                    </div>
+
+                </div>
+
+
+                <div class="service-item ">
+                    <div class="cards">
+                        <div class="card-header">
+                            Salt Rock Finish
+                        </div>
+                        <a href="category.html?type=Flagstone" >
+                        <div class="card-image">
+                            
+                                <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/salt_rock_finish.jpg" 
+                                class="lazyload img-fluid" alt="Salt Rock Finish">
+                            
+                        <div class="over">
+                            <p class="over-text">View More</p>
+                          </div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="service-item ">
+
+
+                    <div class="cards">
+                        <div class="card-header">
+                            Brick
+                        </div>
+                        <a href="category.html?type=Brick" >
+                        <div class="card-image">
+                            
+                                <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/brick.jpg" 
+                                class="lazyload img-fluid" alt="Brick">
+                            
+                        <div class="over">
+                            <p class="over-text">View More</p>
+                          </div>
+                        </div>
+                    </a>
+                    </div>
+
+                </div>
+
+                <div class="service-item ">
+
+                    <div class="cards">
+                        <div class="card-header">
+                            Broom Finish
+                        </div>
+                        <a href="category.html?type=Broom Finish" >
+                        <div class="card-image">
+                            
+                                <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/broom_finish.jpg" 
+                                class="lazyload img-fluid" alt="Broom Finish">
+                            
+                        <div class="over">
+                            <p class="over-text">View More</p>
+                          </div>
+                        </div>
+                    </a>
+                    </div>
                 </div>
                 <div class="service-item ">
-                    <a href="category.html?type=Stained" class="service-link">
-                        <div class="overlayText-top">Stained</div>
-                        <div class="overlayText-bottom">4 images</div>
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+
+                    <div class="cards">
+                        <div class="card-header">
+                            Flagstone
                         </div>
-                        <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/stained.jpg" class="lazyload img-fluid" alt="Stained">
+                        <a href="category.html?type=Flagstone" >
+                        <div class="card-image">
+                            
+                                <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/flagstone.jpg" 
+                                class="lazyload img-fluid" alt="Flagstone">
+                            
+                        <div class="over">
+                            <p class="over-text">View More</p>
+                          </div>
+                        </div>
                     </a>
+                    </div>
+
                 </div>
+
                 <div class="service-item ">
-                    <a href="category.html?type=Border and Mow Strip" class="service-link">
-                        <div class="overlayText-top">Border &amp; Mow Strip</div>
-                        <div class="overlayText-bottom">5 images</div>
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+                    <div class="cards">
+                        <div class="card-header" id ="border_mow">
+                            Border &amp; Mow
                         </div>
-                        <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/border_and_mow_strip.jpg" class="lazyload img-fluid"
-                            alt="Border &amp; Mow Strip">
-                    </a>
-                </div>
-                <div class="service-item ">
-                    <a href="category.html?type=Brick" class="service-link">
-                        <div class="overlayText-top">Brick</div>
-                        <div class="overlayText-bottom">4 images</div>
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+                        <a href="category.html?type=Border and Mow Strip" >
+                        <div class="card-image">
+                            
+                                <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/border_and_mow_strip.jpg" 
+                                class="lazyload img-fluid" alt="Border &amp; Mow Strip">
+                            
+                        <div class="over">
+                            <p class="over-text">View More</p>
+                          </div>
                         </div>
-                        <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/brick.jpg" class="lazyload img-fluid" alt="Brick">
                     </a>
+                    </div>
                 </div>
-                <div class="service-item ">
-                    <a href="category.html?type=Broom Finish" class="service-link">
-                        <div class="overlayText-top">Broom Finish</div>
-                        <div class="overlayText-bottom">8 images</div>
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/broom_finish.jpg" class="lazyload img-fluid" alt="Broom Finish">
-                    </a>
-                </div>
-                <div class="service-item ">
-                    <a href="category.html?type=Flagstone" class="service-link">
-                        <div class="overlayText-top">Flagstone</div>
-                        <div class="overlayText-bottom">13 images</div>
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/flagstone.jpg" class="lazyload img-fluid" alt="Flagstone">
-                    </a>
-                </div>
-                <div class="service-item ">
-                    <a href="category.html?type=Salt Rock Finish" class="service-link">
-                        <div class="overlayText-top">Salt Rock Finish</div>
-                        <div class="overlayText-bottom">4 images</div>
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/salt_rock_finish.jpg" class="lazyload img-fluid" alt="Salt Rock Finish">
-                    </a>
-                </div>
+
+
+
             </div>
         </div>
     </section>
@@ -209,7 +368,7 @@
         <div class="container-fluid">
             <div class="flex flex-column mb-3">
                 <div class="p-2 text-center">
-                    <h4>Landscape</h4>
+                    <h4 class="services-header">Landscape</h4>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -290,6 +449,8 @@
             </div>
         </div>
     </section>
+
+</div>
 
     <!-- Footer -->
     <footer class="text-center">
