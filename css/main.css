@@ -1061,7 +1061,7 @@ strong {
 	z-index: 3;
 	font-family: 'Roboto';
 	font-size: 50px;
-	color: white;
+	color: #fffcf4;
 	position: absolute;
 	top: 45%;
 	left: 50%;
@@ -1075,7 +1075,10 @@ strong {
 	margin: auto;
 	width: 70%;
 }
-
+.about-background{
+	background-color: #fffcf4;
+	padding-bottom: 80px;
+}
 .about-text h2{
 	color: #492e2e;
 	font-family: 'Roboto';
@@ -1104,7 +1107,13 @@ strong {
 	font-family: 'Roboto';
 	font-size: 50px;
 }
-
+.profile-sub{
+	padding-top: 10px;
+	color: #54a56c;
+	font-family: 'Roboto';
+	font-size: 30px;
+	margin-bottom: -40px;
+}
 
 .profile-container {
 	display: flex;
@@ -1116,6 +1125,7 @@ strong {
   }
 .profile-image {
 	flex: 1;
+	margin-top: -50px;
 	text-align: right;
   }
 
@@ -1128,15 +1138,18 @@ strong {
 	padding-top: 50px;
 	margin: auto;
 	background-image: url("../images/about/leaf.jpg");
+	
 	background-size: cover;
-	margin-top: 80px;
+	padding-bottom: 70px;
 }
+
+
 
 .test-text{
 	text-align: center;
 	font-family: 'Roboto';
 	font-size: 50px;
-	color: #fff;
+	color: #fffcf4;
 	margin-bottom: 30px;
 	
 }
@@ -1150,7 +1163,7 @@ strong {
 	width: 250px; /* Adjust the width according to your needs */
 	height: auto; /* Adjust the height according to your needs */
 	background-color: rgba(0, 0, 0, 0.5); 
-	color: white;
+	color: #fffcf4;
 	font-family: 'Lato';
 	padding: 30px;
   }
@@ -1175,5 +1188,67 @@ strong {
   }
 
 .value{
-	background-color: #8bc5b9;
+	background-color: #66aa66;
+	padding-bottom: 200px;
 }
+
+.value-text{
+	font-family: 'Roboto';
+	font-size: 50px;
+	color: #fffcf4;
+	margin-left: 70px;
+	padding-top: 40px;
+}
+
+
+.value-container {
+	display: flex;
+	justify-content: space-around;
+  }
+  
+  .value-box {
+	margin-top: 40px;
+	width: 120px; /* Adjust the width according to your needs */
+	height: 120px; /* Adjust the height according to your needs */
+	text-align: center; /* Center-align the content */
+	
+  }
+
+  
+  .value-box img{
+	display: block; /* Ensures the image is displayed as a block element */
+	width: 120px; /* Adjust the width according to your needs */
+	height: 120px; /* Adjust the height according to your needs */
+	margin: 0 auto; /* Centers the image horizontally within the container */
+  }
+
+  .value-box h2 {
+	font-family: 'Roboto';
+	font-size: 26px;
+	font-weight: 700;
+	color: #fffcf4;
+	margin-top: 10px;
+	white-space:nowrap;
+  }
+
+  #professional{
+	margin-left: -30px;
+  }
+
+  #professional-p{
+	margin-left: -20px;
+  }
+
+  #customer{
+	margin-left: -55px;
+  }
+
+  #qa{
+	margin-left: -10px;
+  }
+  .value-box p {
+	font-family: 'Lato';
+	color: #fffcf4;
+	font-size: 18px;
+	width: 150px;
+  }
