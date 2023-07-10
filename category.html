@@ -11,33 +11,36 @@
     <link href="fontawesome/css/fontawesome.min.css" rel="stylesheet">
     <link href="fontawesome/css/solid.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Lato&family=Archivo+Black&family=Konkhmer+Sleokchher&family=Roboto:wght@100;500;700;900&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lazyload.min.js"></script>
 </head>
 
 <body id="page-top" class="body-style">
     <!-- begin nav -->
-    <nav class="navbar navbar-default navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-default navbar-expand-lg fixed-top bottom-bar">
         <div class="container-fluid">
-            <img class="navbar-brand" src="images/logo.png"/>
+           <a href = "./index.html"><img class="navbar-brand mobile-logo" src="images/bitmap.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-font">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./services.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./about.html">Contact</a>
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scrollLink" href="#contact" >Contact</a>
                     </li>
                 </ul>
             </div>
@@ -45,41 +48,57 @@
     </nav>
     <!-- end nav -->
     <!-- begin header -->
-    <header>
+    <!-- <header>
         <div class="container-fluid">
             <div class="intro-text">
-                <span class="name">%replace_with_query_param%</span>
+                <h1 id="name">%replace_with_query_param%</h1>
                 <hr class="star-light">
-                <span class="skills">These are samples that the Delta Construction & Landscape had completed for the
-                    concrete %replace_with_query_param% projects.
+                <span id = "intro-text" class="skills">These are samples that the Delta Construction & Landscape had completed for the
+                    
                 </span>
             </div>
         </div>
         </div>
-    </header>
+    </header> -->
     <!-- end header -->
-    <section>
-        <div class="d-flex flex-row flex-wrap justify-content-center mb-3" id="image-container">
-            <!-- begin element to repeat -->
-            <div class="service-item-lg">
-                <div class="service-link-lg">
-                    <div class="overlayText-bottom">%replace</div>
-                    <img src="images/thumbnails/loading.gif" data-src="images/concrete/stamped/1.jpg"
-                        class="img-fluid lazyload" alt="%replace%">
 
-                </div>
-            </div>
-            <!-- end element to repeat -->
-            <div class="service-item-lg">
-                <div class="service-link-lg">
-                    <div class="overlayText-bottom">%replace</div>
-                    <img src="images/thumbnails/loading.gif" data-src="images/concrete/stamped/2.jpg"
-                        class="img-fluid lazyload" alt="%replace%">
 
-                </div>
+    <div class="background-image-container">
+        <img src="./images/category/category.jpeg" class="cata-banner"/>
+        <div id="name" class="who-banner">
+            %replace_with_query_param%
+        </div>
+        <div id = "intro-text" class="skills">
+            These are past samples that Delta Construction & Landscape had completed for
             </div>
+            <hr class="star">
+      </div>
+
+
+      <section>
+        <div class="d-flex flex-row flex-wrap justify-content-center mb-3"  id="image-container">
+
         </div>
     </section>
+
+<!-- Contact -->
+    <div class="background-div" id ="contact">
+        <div class="overlay"></div> 
+    <div class="contact-content">
+            <h1 id="us">Contact Us</h1>
+            <h1 id="schedule">Schedule Your Free</h1>
+            <h1 id="consultation">Consultation Now</h1>
+            <h1 id="phone"><img src="images/home/phone.png"/>(916) 417-2458 </h1>
+            <h1 id="email"><img src="images/home/contact.png"/>deltaconstructionlandscape<br/>
+                @yahoo.com</h1>
+    
+            <h2 id="let">Let Your Dreams Come To Life With</h2>
+    
+            <h2 id="delta">Delta</h2>
+            <h2 id="construction">Construction & Landscaping</h2>
+        </div>
+    </div>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center">
@@ -112,10 +131,30 @@
         </div>
     </footer>
 </body>
-<script type="text/javascript">
+
+
+<script src= "js/main.js" type="module"></script>
+
+<!-- <script type="text/javascript">
+
+document.addEventListener("DOMContentLoaded", function() {
+        const scrollLinks = document.querySelectorAll(".scrollLink");
+        const offset = 164;
+
+        scrollLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                const topOffset = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+                window.scrollTo({ top: topOffset, behavior: 'smooth' });
+            });
+        });
+    });
+
     window.onload = function () {
         loadImages();
     }
-</script>
+</script> -->
 
 </html>
