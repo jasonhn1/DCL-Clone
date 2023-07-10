@@ -22,8 +22,7 @@ function loadImages(data) {
     intoTextElement.textContent += type.toLocaleLowerCase();
     intoTextElement.textContent += " projects";
 
-    console.log(data[type])
-    console.log(paramData)
+
     paramData.forEach((imageName) => {
 
         const img = document.createElement("img"); // create img element
