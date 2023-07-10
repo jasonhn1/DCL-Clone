@@ -48,11 +48,12 @@
     </nav>
     <!-- end nav -->
 
-
-
-    <div class="who-banner">Who Are We</div>
-    
-    <img src="./images/about/flower.jpg" class="about-banner"/>
+    <div class="background-image-container">
+        <img src="./images/about/flower.jpg" class="about-banner"/>
+        <div class="who-banner">
+            Who Are We
+        </div>
+      </div>
 
 
 
@@ -107,44 +108,13 @@
        <div class="value">
         <h1 class="value-text">Our Values </h1>
 
-        <!-- <div class="d-flex flex-row flex-wrap justify-content-around mb-3">
-
-            <div class="service-item ">
-            <div class="value-box">
-                <img src="images/about/service.png"> 
-                <h2 id="qa">Quality Service</h2>
-                <p>Exceptional craftsmanship with attention to detail </p>
-            </div>
-            </div>
-
-            <div class="service-item ">
-            <div class="value-box">
-                <img src="images/about/professional.png"> 
-                <h2 id="professional">Professionalism</h2>
-                <p id="professional-p">Reliable, puntual, & licensed</p>
-            </div>
-        </div>
-        <div class="service-item satisfaction">
-            <div class="value-box">
-                <img src="images/about/customer.png"> 
-                <h2 id="customer">Customer Satisfaction</h2>
-                <p>Ensuring happy clients, every time</p>
-            </div>
-          </div>
-        </div>
-
-        <br>
-        <br>
-        <br>
-        <br> -->
 
         <div class="value-container">
-
             <div class="service-item ">
             <div class="value-box">
                 <img src="images/about/service.png"> 
                 <h2 id="qa">Quality Service</h2>
-                <p>Exceptional craftsmanship with attention to detail </p>
+                <p class="qa-p">Exceptional craftsmanship with attention to detail </p>
             </div>
             </div>
 
@@ -187,8 +157,7 @@
             <h2 id="construction">Construction & Landscaping</h2>
         </div>
     </div>
-    </div>
-
+    
 
 
 
@@ -225,18 +194,6 @@
     
 </body>
 <script type="text/javascript">
-
-
-    window.addEventListener('DOMContentLoaded', function() {
-        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        var elements = document.getElementsByClassName('service-item');
-
-        if (screenWidth <= 1000) {
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].classList.add('px-5', 'flex-fill');
-        }
-        }
-    });
 
     document.addEventListener("DOMContentLoaded", function() {
         const scrollLinks = document.querySelectorAll(".scrollLink");
