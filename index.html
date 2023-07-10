@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Damion&family=Lato&family=Archivo+Black&family=Konkhmer+Sleokchher&family=Roboto:wght@100;500;700;900&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lazyload.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body id="page-top" class="body-style">
@@ -23,7 +25,7 @@
 
     <nav class="navbar navbar-default navbar-expand-lg fixed-top bottom-bar">
         <div class="container-fluid">
-           <img class="navbar-brand mobile-logo" src="images/bitmap.png">
+           <a href = "./index.html"><img class="navbar-brand mobile-logo" src="images/bitmap.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -41,7 +43,7 @@
                         <a class="nav-link" href="./about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./about.html">Contact</a>
+                        <a class="nav-link scrollLink" href="#contact" >Contact</a>
                     </li>
                 </ul>
             </div>
@@ -72,7 +74,7 @@
                 </div> 
                 
                 <div class="bottom-corner">
-                    <button class="button-27" role="button">Contact Us</button>
+                    <a href = "#contact" class="scrollLink" ><button class="button-27" role="button">Contact Us</button></a>
                </div> 
           
 
@@ -143,90 +145,126 @@
       </div>
 
 
-      <div class="card-container">
-
-        <div class="cards">
-            <div class="card-header">
-                Patio
-            </div>
-            <div class="card-image">
-            <img  src="./images/thumbnails/patio.jpg"/>
-            
-            <div class="over">
-                <p class="over-text">View More</p>
-              </div>
+      <!-- <div class="card-container"> -->
+    <div class="d-flex flex-row flex-wrap justify-content-center mb-3">
+        <div class="service-item ">
+            <div class="cards">
+                <div class="card-header">
+                    Patios
+                </div>
+                <a href="category.html?type=Patios" >
+                <div class="card-image">
+                    
+                        <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/patio.jpg" class="lazyload img-fluid" alt="Patios">
+                    
+                <div class="over">
+                    <p class="over-text">View More</p>
+                  </div>
+                </div>
+            </a>
             </div>
         </div>
         
-
-        <div class="cards">
-            <div class="card-header">
-                Stamp
+        <div class="service-item ">
+            <div class="cards">
+                <div class="card-header">
+                    Stamped
+                </div>
+                <a href="category.html?type=Stamped" >
+                <div class="card-image">
+                    
+                        <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/stamped.jpg" class="lazyload img-fluid" alt="Stamped">
+                    
+                <div class="over">
+                    <p class="over-text">View More</p>
+                  </div>
+                </div>
+            </a>
             </div>
-            <div class="card-image">
-            <img  src="./images/thumbnails/stamped.jpg"/>
-            
-            <div class="over">
-                <p class="over-text">View More</p>
-              </div>
-            </div>
-        </div>
+    </div>
+    <div class="service-item ">
 
         <div class="cards">
             <div class="card-header">
                 Pool Decks
             </div>
+            <a href="category.html?type=Pool Decks" >
             <div class="card-image">
-            <img  src="./images/thumbnails/pool_deck.jpg"/>
-            
+                    <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/pool_deck.jpg" class="lazyload img-fluid" alt="Pool Decks">
             <div class="over">
                 <p class="over-text">View More</p>
               </div>
             </div>
+        </a>
         </div>
 
-        <div class="cards">
-            <div class="card-header">
-                Flagstone
-            </div>
-            <div class="card-image">
-            <img  src="./images/thumbnails/flagstone.jpg"/>
-            
-            <div class="over">
-                <p class="over-text">View More</p>
-              </div>
-            </div>
         </div>
 
+        <div class="service-item ">
+
+            <div class="cards">
+                <div class="card-header">
+                    Flagstone
+                </div>
+                <a href="category.html?type=Flagstone" >
+                <div class="card-image">
+                    
+                        <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/flagstone.jpg" 
+                        class="lazyload img-fluid" alt="Flagstone">
+                    
+                <div class="over">
+                    <p class="over-text">View More</p>
+                  </div>
+                </div>
+            </a>
+            </div>
+
+
+        </div>
+
+        <div class="service-item ">
         <div class="cards">
             <div class="card-header">
                 Sidewalks
             </div>
+            <a href="category.html?type=Sidewalks" >
             <div class="card-image">
-            <img  src="./images/thumbnails/sidewalk.jpg"/>
-            
+                
+                    <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/sidewalk.jpg" class="lazyload img-fluid" alt="Sidewalks">
+                
             <div class="over">
                 <p class="over-text">View More</p>
-              </div>
+                </div>
             </div>
+        </a>
         </div>
+    </div>
 
+    <div class="service-item ">
         <div class="cards">
             <div class="card-header">
-                Border & Mow
+                Border &amp; Mow Strip
             </div>
+            <a href="category.html?type=Border and Mow Strip" >
             <div class="card-image">
-            <img  src="./images/thumbnails/border_and_mow_strip.jpg"/>
-            
+                
+                    <img src="images/thumbnails/loading.gif" data-src="images/thumbnails/border_and_mow_strip.jpg" 
+                    class="lazyload img-fluid" alt="Border &amp; Mow Strip">
+                
             <div class="over">
                 <p class="over-text">View More</p>
               </div>
             </div>
+        </a>
         </div>
-      </div>
+    </div>
+
+    </div>
+
+      <!-- </div> -->
 
       <div class="btn-corner">
-      <button class="service-btn"> <span>View More</span>
+      <button class="service-btn"> <span>View All </span>
       </button>
     </div>
 
@@ -235,7 +273,7 @@
 
 <!-- Start Contact Us -->
 
-    <div class="background-div">
+    <div class="background-div" id ="contact">
             <div class="overlay"></div> 
         <div class="contact-content">
                 <h1 id="us">Contact Us</h1>
@@ -287,24 +325,19 @@
     
 </body>
 <script type="text/javascript">
-        window.addEventListener('load', function() {
-        var homeText = document.querySelector('.home-text');
-        homeText.classList.add('show');
-        });
+const scrollLinks = document.querySelectorAll('.scrollLink');
+    scrollLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        const offset = 164; // Adjust the offset value as needed
 
-        window.addEventListener('load', function() {
         setTimeout(function() {
-            document.querySelector('.estimates').classList.add('fadeIn');
-        }, 1500); // adjust delay time in milliseconds as needed
-        });
-
-        window.addEventListener('load', function() {
-        setTimeout(function() {
-            document.querySelector('.item').classList.add('highlight-active');
-        }, 2900); // adjust delay time in milliseconds as needed
-        });
-
-
+        const topOffset = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: topOffset, behavior: 'smooth' });
+        }, 20); // Adjust the delay value (in milliseconds) as desired
+    });
+    });
 
     var currentSlide = 0;
     var slides = document.querySelectorAll('#slideshow img');
@@ -319,5 +352,7 @@
     window.onload = function () { 
         lazyload();
     }
+
+
 </script>
 </html>
