@@ -1618,20 +1618,27 @@ strong {
 	}
 }
 
-@media (max-width: 472px) {
-	.service-container{
-		width: 300px;
-
-	}
-
-}
-
 @media (max-width: 600px) {
 	.cata-banner{
 		top:30%;
 		font-size: 30px;
 	}
-
+	.star{
+		max-width: 400px;
+	}
 }
+
+
+@media (max-width: 472px) {
+	.service-container{
+		width: 300px;
+
+	}
+	.star{
+		width: 300px;
+	}
+}
+
+
 
 
