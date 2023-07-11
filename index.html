@@ -95,14 +95,11 @@
 
     <!-- begin about -->
     <div class="explore-container">
-        <div class="explore-wrapper">
-     
         <div class = "explore-corner">
-          <p class ="explore-text explore-top">With Over 25</p>
-          <p class ="explore-text ">Years of Experience <span>&#8196;</span></p>
-        </div>
-     
-     
+            <p class ="explore-text explore-top">With Over 25</p>
+            <p class ="explore-text ">Years of Experience <span>&#8196;</span></p>
+            </div>
+        <div class="explore-wrapper">
         <img class = "mobile-patio"src="images/home/patio.jpeg" alt="Image"> 
           
         <p class="explore-description">
@@ -116,6 +113,8 @@
      
             <button  class="explore"><span>LEARN MORE  <img id="explore" src="images/home/explore.png" alt="Image"> </span></button> 
         </div>
+
+        
         
         <div class="explore-image">
           <img src="images/home/patio.jpeg" alt="Image"> 
@@ -137,16 +136,15 @@
         <div class="service-container">
                 <p>
                     At Delta, we specialize in a variety of services designed to enhance
-                     your outdoor spaces. Our expertise encompasses stamped concrete, driveways, 
+                     your outdoor space. Our expertise encompasses stamped concrete, driveways, 
                      pool decks, and retaining walls. With a strong emphasis on aesthetics, our skilled 
-                     team excels in creating visually
-                     stunning designs for walkways, patios, and outdoor surfaces.</p>
+                     team excels in creating designs for walkways, patios, and outdoor surfaces.</p>
           </div> 
       </div>
 
 
-      <!-- <div class="card-container"> -->
-    <div class="d-flex flex-row flex-wrap justify-content-center mb-3">
+    
+    <div class="d-flex flex-row flex-wrap justify-content-center mb-3 c-container">
         <div class="service-item ">
             <div class="cards">
                 <div class="card-header">
@@ -243,7 +241,7 @@
     <div class="service-item ">
         <div class="cards">
             <div class="card-header">
-                Border &amp; Mow Strip
+                Border &amp; Mow 
             </div>
             <a href="category.html?type=Border and Mow Strip" >
             <div class="card-image">
@@ -264,7 +262,7 @@
       <!-- </div> -->
 
       <div class="btn-corner">
-      <button class="service-btn"> <span>View All </span>
+        <button class="service-btn"> <a href="./services.html" id ="all"><span>View All </span></a>
       </button>
     </div>
 
@@ -325,28 +323,46 @@
     
 </body>
 <script type="text/javascript">
-const scrollLinks = document.querySelectorAll('.scrollLink');
-    scrollLinks.forEach(function(link) {
-    link.addEventListener('click', function(event) {
-        event.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        const offset = 164; // Adjust the offset value as needed
 
-        setTimeout(function() {
-        const topOffset = target.getBoundingClientRect().top + window.pageYOffset - offset;
-        window.scrollTo({ top: topOffset, behavior: 'smooth' });
-        }, 20); // Adjust the delay value (in milliseconds) as desired
-    });
-    });
 
-    var currentSlide = 0;
-    var slides = document.querySelectorAll('#slideshow img');
-  
-    function nextSlide() {
-      slides[currentSlide].style.opacity = 0;
-      currentSlide = (currentSlide + 1) % slides.length;
-      slides[currentSlide].style.opacity = 1;
+
+document.addEventListener("DOMContentLoaded", function() {
+  const navbarToggler = document.querySelector(".navbar-toggler");
+  const navbarCollapse = document.querySelector(".navbar-collapse");
+
+  navbarCollapse.addEventListener("click", function(event) {
+    if (event.target.tagName === "A") {
+      navbarToggler.click(); // Simulate click on the navbar toggler to close the menu
     }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const scrollLinks = document.querySelectorAll(".scrollLink");
+  let offset = 164; // Default offset value
+
+  function setOffset() {
+    if (window.innerWidth <= 680) {
+      offset = 115; // Adjusted offset value for window size 680 or less
+    } else {
+      offset = 164; // Default offset value for larger window size
+    }
+  }
+
+  // Call setOffset function initially and on window resize
+  setOffset();
+  window.addEventListener("resize", setOffset);
+
+  scrollLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      const topOffset = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+      window.scrollTo({ top: topOffset, behavior: 'smooth' });
+    });
+  });
+});
   
   // setInterval(nextSlide, 5000);
     window.onload = function () { 

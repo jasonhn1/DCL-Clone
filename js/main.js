@@ -53,19 +53,42 @@ function loadImages(data) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const scrollLinks = document.querySelectorAll(".scrollLink");
-    const offset = 164;
-
-    scrollLinks.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            const topOffset = target.getBoundingClientRect().top + window.pageYOffset - offset;
-
-            window.scrollTo({ top: topOffset, behavior: 'smooth' });
-        });
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+  
+    navbarCollapse.addEventListener("click", function(event) {
+      if (event.target.tagName === "A") {
+        navbarToggler.click(); // Simulate click on the navbar toggler to close the menu
+      }
     });
-});
+  });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollLinks = document.querySelectorAll(".scrollLink");
+    let offset = 164; // Default offset value
+  
+    function setOffset() {
+      if (window.innerWidth <= 680) {
+        offset = 115; // Adjusted offset value for window size 680 or less
+      } else {
+        offset = 164; // Default offset value for larger window size
+      }
+    }
+  
+    // Call setOffset function initially and on window resize
+    setOffset();
+    window.addEventListener("resize", setOffset);
+  
+    scrollLinks.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        const topOffset = target.getBoundingClientRect().top + window.pageYOffset - offset;
+  
+        window.scrollTo({ top: topOffset, behavior: 'smooth' });
+      });
+    });
+  });
 
 window.onload = function () {
 
