@@ -199,13 +199,26 @@ document.addEventListener("DOMContentLoaded", function() {
   const navbarToggler = document.querySelector(".navbar-toggler");
   const navbarCollapse = document.querySelector(".navbar-collapse");
 
-  navbarCollapse.addEventListener("click", function(event) {
+  function handleResize() {
+    if (window.innerWidth <= 991) {
+      navbarCollapse.addEventListener("click", handleClick);
+    } else {
+      navbarCollapse.removeEventListener("click", handleClick);
+    }
+  }
+
+  function handleClick(event) {
     if (event.target.tagName === "A") {
       navbarToggler.click(); // Simulate click on the navbar toggler to close the menu
     }
-  });
-});
+  }
 
+  // Initial execution based on window size
+  handleResize();
+
+  // Execute the function on window resize
+  window.addEventListener("resize", handleResize);
+});
 
 document.addEventListener("DOMContentLoaded", function() {
   const scrollLinks = document.querySelectorAll(".scrollLink");
