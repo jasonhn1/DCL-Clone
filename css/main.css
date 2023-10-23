@@ -23,6 +23,17 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 	border-bottom: 4mm groove rgba(122, 73, 0, 0.6);
 }
 
+.navbar-toggler {
+    background-color: #b69851	; /* Replace 'your-color' with the desired background color */
+    border-color: none; /* Change the border color */
+	;
+
+}
+
+.navbar-toggler-icon {
+    color: #492e2e; /* Change the color of the three lines */
+}
+
 /* navbar */
 .nav-item{
 	padding-right: 30px;
