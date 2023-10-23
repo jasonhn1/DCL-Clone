@@ -523,15 +523,22 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 .service-header{
 	font-family: 'Roboto';
 	font-size: 50px;
-	color: #000000;
+	color: #492e2e;
 	margin-left: 30px;
-	background-color: #D9D9D9;
 	padding-left: 50px;
 	padding-right: 40px;
 	margin-left: -10px;
 }
 .service-spacing{
 	padding-top: 70px;
+	margin-left: 30px;
+}
+
+.services-position{
+	margin-left: 30px;
+	padding-left: 50px;
+	padding-right: 40px;
+	margin-left: -10px;
 }
 
 .service-container {
@@ -540,7 +547,11 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 	width: 600px;
 	font-family:'Lato';
   }
+
   
+.service-container p{
+font-size: 20px;
+}  
 .card-container{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
@@ -676,8 +687,8 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 	font-weight: 700;
 	font-size: 17px;
 	overflow: hidden;
-	background: #66ff66;
-	color: ghostwhite;
+	background: #54a56c;
+	color: white;
    }
    
    .service-btn span {
@@ -696,7 +707,7 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 900%;
 	z-index: 0;
    }
    
@@ -1030,14 +1041,14 @@ footer h3 {
 }
 footer .footer-above {
 	padding-top: 20px;
-	background-color: #2c5042;
+	background-color: #3a5a3f;
 }
 footer .footer-col {
 	margin-bottom: 50px;
 }
 footer .footer-below {
 	padding: 15px 0;
-	background-color: #1c3826;
+	background-color: #283c2c;
 }
 strong {
 	color: #18bc9c;
@@ -1465,6 +1476,17 @@ strong {
   .services-bg{
 	background-color: #fff;
   }
+
+  hr.star-primaryz {
+	margin: 0px auto 0px;
+	padding: 0;
+	max-width: 100px;
+	border: 0;
+	border-top: solid 5px;
+	margin-left:75px;
+	border-color: #54a56c;
+    opacity: 100%;
+}
 
   .services-header{
 	margin-top: 50px;
