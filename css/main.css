@@ -553,10 +553,10 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 }
 
 .service-container {
-	margin-top: 20px;
-	margin-left: 70px;
+	margin-bottom: 50px;
 	width: 600px;
 	font-family:'Lato';
+	margin: auto;
   }
 
   
@@ -737,10 +737,20 @@ font-size: 20px;
    
 
 
-.service-bg{
+.home-service-bg{
 	background-color: #fffcf4;
+	justify-self: center; 
+	text-align: center;
 }
 
+.home-service{
+	width: 80%;
+    margin: auto;
+}
+.home-card-service-title{
+	text-align: left;
+	margin-top: 50px;
+}
 
 /* START OF CONTACT US */
 
@@ -1131,7 +1141,6 @@ strong {
 
 .about-section{
 	padding-top: 40px;
-	width: 700px;
 	margin: auto;
 	width: 70%;
 }
@@ -1139,6 +1148,7 @@ strong {
 	background-color: #fffcf4;
 	padding-bottom: 80px;
 }
+
 .about-text h2{
 	color: #492e2e;
 	font-family: 'Roboto';
@@ -1374,7 +1384,7 @@ strong {
 	}
 
 	.value-text{
-		font-size: 35px;
+		font-size: 40px;
 	}
 
 	.value-box{
@@ -1410,31 +1420,6 @@ strong {
   }
 
 
-  @media (max-width: 625px) {
-	
-	.about-banner{
-		height: 400px;
-	}
-	.who-banner{
-		font-size: 35px;
-	}
-	.about-text h2{
-		font-size: 35px;
-	}
-	
-	.profile-text{
-		font-size: 35px;
-
-	}
-	
-	.about-text h4{
-
-		font-size: 20px;
-	}
-	.about-text p{
-
-		font-size: 14px;
-	}
 
 
 
@@ -1455,7 +1440,7 @@ strong {
 		font-size: 20px;
 	  }
 	
-  }
+  
 
 
   @media (max-width: 1000px) {
@@ -1485,8 +1470,10 @@ strong {
 	margin-top: 100px;
 }
   .services-bg{
-	background-color: #fff;
+	background-color: #fffcf4;
   }
+
+
 
   hr.star-primaryz {
 	margin: 0px auto 0px;
@@ -1494,9 +1481,9 @@ strong {
 	max-width: 100px;
 	border: 0;
 	border-top: solid 5px;
-	margin-left:75px;
 	border-color: #54a56c;
     opacity: 100%;
+	margin-bottom:50px;
 }
 
   .services-header{
@@ -1708,3 +1695,39 @@ strong {
 
 
 
+
+
+@media (max-width: 625px) {
+	
+	.about-banner{
+		height: 400px;
+	}
+	 .who-banner{
+		font-size: 35px;
+	}
+	.services-header{
+		font-size: 50px;
+	}
+
+	.service-header{
+		font-size: 50px;
+	}
+	.about-text h2{
+		font-size: 35px;
+	}
+	
+	.profile-text{
+		font-size: 35px;
+
+	}
+	
+	.about-text h4{
+
+		font-size: 20px;
+	}
+	.about-text p{
+
+		font-size: 14px;
+	}
+
+}
