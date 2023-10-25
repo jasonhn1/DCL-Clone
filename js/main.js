@@ -31,14 +31,15 @@ function loadImages(data) {
         const textDiv = document.createElement("div");
 
         itemDiv.classList.add('service-item-lg');
+        
         linkDiv.classList.add('service-link-lg');
-        textDiv.classList.add('overlayText-bottom');
-        textDiv.textContent = type;
+
 
         itemDiv.appendChild(linkDiv);
         linkDiv.appendChild(textDiv);
         linkDiv.appendChild(img);
         console.log(imageName)
+
         img.setAttribute("data-src", `images/service/${folderImgPath}/${imageName}`); // set data-src attribute
         img.setAttribute("src", `images/thumbnails/loading.gif`); // set src attribute
         img.setAttribute("class", "lazyload"); // set class attribute

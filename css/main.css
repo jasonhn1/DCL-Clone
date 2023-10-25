@@ -335,7 +335,11 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 
 
 /* START OF explore US SECTION */
+.patio{
 
+	object-fit: cover;
+	max-height: 100%;
+}
 .explore-container {
 	display: flex; 
 	flex-direction: row;
@@ -394,7 +398,7 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
   .explore-image {
 	display: flex;
 	justify-content: flex-end;
-	flex-basis: 45%; 
+	flex-basis: 20%; 
 	box-sizing: border-box;
 
   }
@@ -969,6 +973,17 @@ hr.star-light {
     opacity: 100%;
 }
 
+
+.cata-container{
+	width: 70%;
+	margin: auto;
+}
+
+.cata-service-container{
+	width: 90%;
+	margin: auto;
+}
+
 .service-item {
 	display: inline-block;
 	margin: 10px;
@@ -977,7 +992,7 @@ hr.star-light {
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	max-width: 350px;
+	max-width: 1000px;
 	text-align: center;
 }
 .service-item-lg {	
@@ -1085,7 +1100,8 @@ strong {
 	left: 0;
 	width: 100%;
 	object-fit: cover;
-	height: 700px;
+	height: 600px;
+	
 }
 
 .cata-banner {
@@ -1458,8 +1474,8 @@ strong {
   /* Start of service */
 
   .img-size{
-	width: 350px;
-	height: 263px;
+	width: 400px;
+	height: 300px;
 }
   
 .service-banner{
