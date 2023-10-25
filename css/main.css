@@ -1477,6 +1477,11 @@ strong {
 	width: 400px;
 	height: 300px;
 }
+
+.side-img-size{
+	width: 400px;
+max-height: 500px;
+}
   
 .service-banner{
 	top: 0;

@@ -31,7 +31,6 @@ function loadImages(data) {
         const textDiv = document.createElement("div");
 
         itemDiv.classList.add('service-item-lg');
-        
         linkDiv.classList.add('service-link-lg');
 
 
@@ -44,7 +43,14 @@ function loadImages(data) {
         img.setAttribute("src", `images/thumbnails/loading.gif`); // set src attribute
         img.setAttribute("class", "lazyload"); // set class attribute
         img.setAttribute("alt", type); // set alt attribute
-        img.classList.add('img-size');
+
+        if(folderImgPath==="Sidewalks" || folderImgPath==="Steps"){
+          img.classList.add('side-img-size');
+
+        }else{
+          img.classList.add('img-size');
+
+        }
 
         parentElement.appendChild(itemDiv);
     });
