@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
 
+
+body{
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+
+}
 .all{
 	text-decoration: none;
 	color: white;
@@ -17,6 +22,7 @@ html {
 	flex-direction: column;
 	align-items: center;
   }
+
 
 /* Border under nav bar */
 nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
@@ -110,6 +116,7 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 
 
 
+
 #slideshow {
 	position: relative;
 	display: block;
@@ -148,14 +155,19 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 	letter-spacing: 4px;
 	z-index: 3;
 	transform: translateY(50%);
-	/* animation: fade-up 1s ease-in-out forwards;
-	animation-delay: .5s;  */
+
 	background-color: #000000af;
 	text-align: right;
 	padding: 20px;
 	padding-right:35px;
 	padding-left: 100px;
 	word-spacing: 5px;
+
+	animation: fadeRight 1.5s ease-in-out; 
+
+	animation-delay: 1.5s;
+	opacity: 0;
+    animation-fill-mode: forwards;  
 }
 
 
@@ -184,25 +196,14 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 	background-color: #000000af;
 	padding: 10px 40px;
 	white-space: nowrap;
+
+	animation: fadeRightEs 1.5s ease-in-out; 
+	animation-delay: 1.5s;
+	opacity: 0;
+    animation-fill-mode: forwards; 
 }
 
-.fadeIn {
-	opacity: 0;
-	transform: translate3d(-400px, 0, 0);
 
-	animation: fadeInAnimation 1s ease-in-out forwards;
-  }
-  
-  @keyframes fadeInAnimation {
-	0% {
-	  opacity: 0;
-	  transform: translate3d(-50px, 0, 0);
-	}
-	100% {
-	  opacity: 1;
-	  transform: translate3d(0, 0, 0);
-	}
-  }
 
 
 /* CSS */
@@ -232,6 +233,8 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 	touch-action: manipulation;
 	width: 100%;
 	will-change: transform;
+
+
   }
   
   .button-27:disabled {
@@ -255,6 +258,11 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 	left: 0;
 	margin: 60px;
 	z-index: 5;
+	animation: fadeLeft 1.5s ease-in-out; 
+	animation-delay: 1.5s;
+	opacity: 0;
+    animation-fill-mode: forwards; /* This ensures the final animation state is maintained */
+
 }
 
 @media ( max-width :1262px) {
@@ -279,10 +287,6 @@ nav.navbar.navbar-default.navbar-expand-lg.fixed-top.bottom-bar {
 
 	.home-text p{
 		font-size: 35px;
-	}
-	.estimates {
-	
-		top: 550px;
 	}
 
 	 .button-27 {
@@ -1150,7 +1154,7 @@ strong {
 	width: 100%;
 	object-fit: cover;
 	height: 600px;
-	
+
 }
 
 .cata-banner {
@@ -1167,6 +1171,9 @@ strong {
 	white-space: nowrap;
   }
 
+  .hidden {
+    display: none; /* Initially hide the div */
+}
 
 .who-banner {
 	z-index: 3;
@@ -1180,8 +1187,14 @@ strong {
 	padding: 20px;
 	background-color: rgba(0, 0, 0, 0.5);
 	white-space: nowrap;
-	animation: fadeUp 1.5s ease-in-out; /* Animation properties */
+	animation: fadeUp 1.5s ease-in-out; 
+	animation-delay: 1.5s;
+	opacity: 0;
+    animation-fill-mode: forwards; /* This ensures the final animation state is maintained */
+
   }
+
+ 
 
 
   @keyframes fadeUp {
@@ -1541,6 +1554,7 @@ max-height: 500px;
 }
   .services-bg{
 	background-color: #fffcf4;
+	padding-bottom: 50px;
   }
 
 
@@ -1658,6 +1672,11 @@ max-height: 500px;
 
 	.service-container {
 		width: 400px;
+	}
+
+	.estimates {
+	
+		top: 300px;
 	}
 }
 
@@ -1793,4 +1812,48 @@ max-height: 500px;
 		font-size: 14px;
 	}
 
+}
+
+@keyframes fadeLeft {
+    from {
+		bottom: 70px;
+        opacity: 0;
+        transform: translateX(-20px); /* Adjust the value for the distance of the fade */
+    }
+
+    to {
+		bottom: 70px;
+
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeRight {
+    from {
+		top: 200px;
+        opacity: 0;
+        transform: translateX(20px); /* Adjust the value for the distance of the fade */
+    }
+
+    to {
+		top: 200px;
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes fadeRightEs {
+    from {
+		top: 660px;
+        opacity: 0;
+        transform: translateX(20px); /* Adjust the value for the distance of the fade */
+    }
+
+    to {
+		top: 660px;
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
