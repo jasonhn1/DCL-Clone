@@ -1846,13 +1846,13 @@ max-height: 500px;
 
 @keyframes fadeRightEs {
     from {
-		top: 660px;
+		top: 620px;
         opacity: 0;
         transform: translateX(20px); /* Adjust the value for the distance of the fade */
     }
 
     to {
-		top: 660px;
+		top: 620px;
         opacity: 1;
         transform: translateX(0);
     }
